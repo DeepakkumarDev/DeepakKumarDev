@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Deepak Kumar Dev - About{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class='main'>
+    <div class="about-container">
+        <div class="resume-section">
+            <a href="https://drive.google.com/file/d/1uychkBx-o71BOg31ZzeBfCDqcuIOC57V/view?usp=drive_link" class="resume-link">Download Resume</a>
+        </div>
+        <h1>About Me</h1>
+        <div class="about-section">
+            <img src="{% static 'img/Deepak.jpg' %}" alt="Deepak Kumar Dev" class="profile-photo">
+            <h2>Deepak Kumar Dev</h2>
+            <p><strong>Education:</strong></p>
+            <ul>
+                <li>Intermediate from Saharsa, Bihar (852129)</li>
+                <li>BA (Progg) from Aryabhata College, University of Delhi (2014-2017)</li>
+                <li>M.Sc. in Mathematics from University of Hyderabad (2018)</li>
+                <li>Currently pursuing MCA from University of Delhi, Delhi</li>
+            </ul>
+            <p><strong>Work Experience:</strong></p>
+            <ul>
+                <li>Worked with reputed edutech companies like Toppr.com and Filo</li>
+                <li>Currently a Data Scientist Intern at Nighwan Technology</li>
+            </ul>
+            <p><strong>Hobbies:</strong> Playing badminton</p>
+            <p><strong>Location:</strong> Saharsa, Bihar, India (852129)</p>
+            <p><strong>Current Residence:</strong> Hyderabad, Telangana, India</p>
+        </div>
+        <div class="social-media-section">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="{% static 'img/facebook.png' %}" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="{% static 'img/github.png' %}" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn">
+            </a>
+            <a href="https://www.urbanpro.com" target="_blank">
+                <img src="{% static 'img/urbanpro.png' %}" alt="UrbanPro">
+            </a>
+        </div>
+        <div class="contact-section">
+            <h3>Contact Me</h3>
+            <p>Email: deepak.dev.mca22.du@gmail.com</p>
+            <p>Phone: +91-9015108475</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

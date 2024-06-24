@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block title %}Deepak Kumar Dev{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class='main'>
+    <div class="greeting">
+        <h1>Welcome to Deepak Kumar Dev's Website</h1>
+        <h2>Glad to have you here!</h2>
+    </div>
+
+    <div class="photo-slider">
+        <div class="slider-track">
+            {% for i in 10|to_range %}
+            <div class="slide">
+                <img src="{% static 'img/download' %}{{ i }}.jpeg" alt="Photo {{ i }}">
+            </div>
+            {% endfor %}
+            {% for i in 10|to_range %}
+            <div class="slide">
+                <img src="{% static 'img/download' %}{{ i }}.jpeg" alt="Photo {{ i }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="quote">
+        <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+        <p>"Success is not the key to happiness. Happiness is the key to success." - Albert Schweitzer</p>
+        <p>"Believe you can and you're halfway there." - Theodore Roosevelt</p>
+        <p>"Don't watch the clock; do what it does. Keep going." - Sam Levenson</p>
+        <p>"Act as if what you do makes a difference. It does." - William James</p>
+        <p>"Success usually comes to those who are too busy to be looking for it." - Henry David Thoreau</p>
+        <p>"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
+        <p>"It always seems impossible until it's done." - Nelson Mandela</p>
+        <p>"You are never too old to set another goal or to dream a new dream." - C.S. Lewis</p>
+        <p>"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb</p>
+        <p>"Don't be afraid to give up the good to go for the great." - John D. Rockefeller</p>
+        <p>"Success is not in what you have, but who you are." - Bo Bennett</p>
+        <p>"Start where you are. Use what you have. Do what you can." - Arthur Ashe</p>
+        <p>"Your time is limited, don't waste it living someone else's life." - Steve Jobs</p>
+        <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+    </div>
+</div>
+{% endblock %}

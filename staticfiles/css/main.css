@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #1a1a1a;
+    color: #FFFFFFDD;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 100px auto; /* Adjusted margin for spacing between header, main content, and footer */
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 80px; /* Add padding to accommodate the fixed footer */
+}
+
+.section {
+    padding: 20px 0;
+}
+
+.greeting {
+    background-color: #282828;
+    border-bottom: 2px solid #ecad29;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.greeting h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.greeting h2 {
+    font-size: 24px;
+    margin: 10px 0 0;
+    font-weight: 500;
+}
+/* static/css/slider.css */
+/* static/css/slider.css */
+
+.photo-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(100% * 10); /* Assuming 10 slides */
+    animation: slide-right 60s linear infinite; /* Slow down the animation */
+}
+
+.slide {
+    width: 10%; /* Each slide should take up 1/10th of the slider track */
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.quote {
+    background-color: #282828;
+    border-top: 2px solid #ecad29;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.quote p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.footer p {
+    margin: 0;
+}

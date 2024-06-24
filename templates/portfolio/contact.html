@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Us - Deepak Kumar Dev{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class='main'>
+    <h1>Contact Us</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            {{ form.name }}
+        </div>
+        <div class="form-group">
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+        </div>
+        <div class="form-group">
+            <label for="id_contact_number">Contact Number:</label>
+            {{ form.contact_number }}
+        </div>
+        <div class="form-group">
+            <label for="id_gender">Gender:</label>
+            {{ form.gender }}
+        </div>
+        <div class="form-group">
+            <label for="id_occupation">Occupation:</label>
+            {{ form.occupation }}
+        </div>
+        <div class="form-group">
+            <label for="id_message">Message:</label>
+            {{ form.message }}
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
