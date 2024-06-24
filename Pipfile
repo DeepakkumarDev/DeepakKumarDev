@@ -5,10 +5,6 @@ name = "pypi"
 
 [packages]
 django = "*"
-django-sslserver = "*"
-python-dotenv = "*"
-mysqlclient = "*"
-python-decouple = "*"
 
 [dev-packages]
 

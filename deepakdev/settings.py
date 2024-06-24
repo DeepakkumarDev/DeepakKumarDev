@@ -28,10 +28,12 @@ load_dotenv(dotenv_path=env_path)
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-from decouple import config, Csv
+# from decouple import config, Csv
+SECRET_KEY = 'django-insecure-h@)@bm86fpz%=a6_77=$9m1w&@4$hmjvc9^%9wpo(6ompf0&tb'
 
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+
+# SECRET_KEY = config('SECRET_KEY') 
+# DEBUG = config('DEBUG', default=False, cast=bool)
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
@@ -39,7 +41,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'deepakdev.com']
